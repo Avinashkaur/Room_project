@@ -1,0 +1,15 @@
+/*CSS for RooM project*/
+
+/*general css*/
+
+
+
+
+.first-row { background-color: #e2e2e2; }
+.first-row .header { margin: 2px; background-color: #777777; }
+.first-row .header .left-space { height: 40px;}
+.first-row .span12 .row-fluid .span1:first-child { background-color: #fff; }
+.first-row .logo-area { margin-left: 0px!important; width: 19%; background-color: #fff; }
+.first-row .logo{ background: #fff url('images/sprite-part2.png') -840px -550px no-repeat; height: 40px;/* width:13.2%!important;*/ margin-left: 0px!important; }
+/*.first-row .logo .row-fluid .span12 { background: url("images/sprite-part2.png") -840px -600px no-repeat; height: 41px; width: 79px;}*/
+.first-row .room-label{ background: transparent url('images/sprite-part2.png') -878px -604px no-repeat; height: 40px; /*width:81px;*/ margin-left: 2.57%!important; }
