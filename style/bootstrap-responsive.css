@@ -113,9 +113,6 @@
     margin-left: -30px;
     *zoom: 1;
   }
-  body {
-    background-color: red;
-  }
   .row:before,
   .row:after {
     display: table;
@@ -466,9 +463,6 @@
     margin-left: -20px;
     *zoom: 1;
   }
-  body {
-    background-color: blue;
-  }
   .row:before,
   .row:after {
     display: table;
@@ -809,7 +803,6 @@
   body {
     padding-right: 20px;
     padding-left: 20px;
-    background-color: orange;
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom,
@@ -908,9 +901,6 @@
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
   }
-  body { 
-   background-color: yellow;
- }
   .page-header h1 small {
     display: block;
     line-height: 20px;
@@ -962,7 +952,6 @@
 @media (max-width: 979px) {
   body {
     padding-top: 0;
-    background-color: grey;
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -1116,9 +1105,6 @@
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
-  }
-  body {
-     background-color: black;
   }
 } 
 

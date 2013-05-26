@@ -1,4 +1,4 @@
-/*CSS for RooM project*/
+CSS for RooM project*/
 
 @font-face
 {
@@ -19,25 +19,149 @@ src: url('interval_regular-webfont.woff');
 }
 
 
-.row-fluid .span10 { margin: 0 auto!important; float: none!important; }
-.row-fluid .logo-area { background-color: #fff; float:left; width:25%; }
-.row-fluid .logo-area img { float:right;}
-.row-fluid .logo-area #main-logo { margin-top: 6px; margin-right: 5%; width: 47.3%;}
-.row-fluid .logo-area #room-logo { width: 24.4%;}
-
-.row-fluid .main-nav { margin-left: 0!important; background-color: #777777; height:41px; width:75%;}
-.row-fluid .main-nav ul.nav { list-style-type: none; height: 41px; margin:0; padding:0; }
-.row-fluid .main-nav ul.nav li:not(.offset2){ margin-left: 0; float: left; width:11%;}
-.row-fluid .main-nav ul.nav li.offset1 { margin-left:5%!important;}
-a.btn.btn-navbar.list-icon { background: transparent url('images/sprite-part1.png') -384px -986px; width:35px; height:19px; float:right;}
+.row-fluid .span10 { margin: 0 auto!important; float: none; }
+.header .logo-area { background-color: #fff; float:left; width:25%; border-left:1px solid #e9e9e4; border-top:1px solid #e9e9e4; }
+.header .logo-area img { float:left; /*max-width: 100%;*/ } 
+.header .logo-area #main-logo { margin: 5px 5% 5px 22%; /*width: 47.3%;*/ float:left;}
+.header .logo-area #room-logo { float:right;}
 
 
+.header .main-nav { margin-left: 0!important; background-color: #777777; height:41px; width:75%; float:right; }
+.header .main-nav ul.nav { list-style-type: none; /*height: 41px;*/ margin:0; padding:0; }
+.header .main-nav ul.nav  li { margin-top:10px; margin-left: 1.745%!important; margin-right: 1%; float: left; }
+.header .main-nav ul.nav  li.pull-left { float:left;}
+.header .main-nav ul.nav  li.pull-right { float:right;}
+.header .main-nav ul.nav  li:not(.span1) { width:11%;}
+.header .main-nav .navbar-inner .container { width: inherit;}
 
-/*.row-fluid .main-nav ul.nav li.pull-left { float: left!important;}
-.row-fluid .main-nav ul.nav li.pull-right { float: right!important;}*/
 
-.row-fluid .main-nav ul.nav li a { text-decoration: none; color: #fff;  font-family: 'interval_condensedregular'; font-size:15px; margin: 9% 10% 5%; float:left;}
-.row-fluid .main-nav ul.nav li a.upload span, .row-fluid .main-nav ul.nav li a.ropuchen span { margin-left:100%; float:left; padding-left: 14%;  }
-.row-fluid .main-nav ul.nav li a.upload {width: 100%; background: transparent url("images/sprite-part1.png") -620px -970px no-repeat; height: 45%; width: 12.5%;/* padding-right: 7%;*/ float:left; }
-.row-fluid .main-nav ul.nav li a.ropuchen { background: transparent url("images/sprite-part1.png") -620px -970px no-repeat; height: 18px; width: 18px; }
 
+@media (min-width: 980px) {
+
+.navbar a.btn { display: none; }
+.header .logo-area #main-logo { margin: 5px 5% 5px 22%; width: 47.3%; float:left; }
+.header .logo-area #room-logo { width:24.3%; height:41px; }
+
+.login-info .span4 dl dt { width:23%; }
+.login-info .span4 dl dd { width: 20%; margin-left: 2%;}
+
+.login-info .span6 { width:48.717948717948715%;}
+
+/*#main-logo { display: none; }*/
+
+}
+
+@media (min-width: 1200px) {
+  .login-info .span4 dl dt { width:39.3%;}
+  .login-info .span4 dl dd { width: 50%; margin-left:10%; }
+
+}
+
+
+ a.btn.btn-navbar.list-icon span { background: transparent url('images/sprite-part1.png') -384px -986px; width:35px; height:19px; float:right;}
+
+.header .main-nav ul.nav li a { text-decoration: none; color: #fff;  font-family: 'interval_condensedregular'; font-size:15px; /*margin: 9% 10% 5%; float:left;*/}
+.header .main-nav ul.nav li a.upload { padding-left:5.5%;}
+.header .main-nav ul.nav li a.upload span{ background: transparent url("images/sprite-part1.png") -620px -970px no-repeat; height: 19px; width: 20px; float:left; }
+.header .main-nav ul.nav li a.ropuchen span{ background: transparent url("images/sprite-part1.png") -620px -970px no-repeat; height: 19px; width: 20px; float:left; }
+.header .main-nav ul.nav li a.ropuchen { padding-left:5.5%;}
+
+
+.login-info { background-color: #dfdfdb; float: left;}
+/*.login-info .span10 .span6 { width: 49.3%; margin-left:0!important;}*/
+.login-info .span10 { margin-top: 3.7%!important; margin-bottom: 2.5%!important;}
+.login-info .span4 { margin-left:0; margin-right:3%;}
+.login-info div.label { font-family: 'interval_condensedlight'; font-size:25px;}
+.login-info .span4 dl { padding-right: 2%; }
+
+.login-info .span4 dl dt img { float: left; max-width: 100%; }
+.login-info .span4 dl dt img:first-child { margin-bottom: 10px; }
+.login-info .span4 dl dd { font-family: 'interval_condensedregular'; font-size: 16px; float:left; /*margin-left: 10%;*/ }
+.login-info .span4 dl dd div { line-height: 20px;}
+.login-info .span4 dl dd .share-button { margin-top:2%;}
+
+/*.login-info .span4 dl dd .share-button dl { float: left;}*/
+.login-info .span4 dl dd .share-button dt { background: transparent url('images/sprite-part1.png') -711px -95px no-repeat; height:33px; width:33px; float: left;}
+.login-info .span4 dl dd .share-button dd { margin-top: 8px; margin-left:0;}
+.login-info img.divider { float:left; margin-top:1.5%;}
+
+.login-info .span6 { margin-left: 5%; float: left; }
+
+.login-info .span6 .details .span6 { margin-left: 0!important;  float: left;}
+.login-info .span6 .details .span6 dl { float:left;}
+.login-info .span6 .details .span6 dl dt.place{ background: transparent url('images/sprite-part1.png') -754px -95px no-repeat; height:33px; width:33px; float: left;}
+.login-info .span6 .details .span6 dl dt.email{ background: transparent url('images/sprite-part1.png') -796px -95px no-repeat; height:33px; width:33px; float: left;}
+.login-info .span6 .details .span6 dl dd { margin-top: 10px;  float: left; margin-left: 0;}
+
+.login-info .span6 .details .span12 { margin-left:0; font-family: 'interval_condensedregular'; font-size: 14px; text-align: justify; }
+.login-info .span6 .details .arrow { background: transparent url("images/sprite-part1.png") -606px -12px no-repeat; height:10px; width:20px; float:left; margin: 1% 50%;}
+.login-info .span6 .details .span12.share-options a { text-decoration: none; text-align: center; color:#000; float: left; width: 6.4%;}
+.login-info .span6 .details .span12.share-options a.span1:not(:first-child) { margin-left: 4%;}
+.login-info .span6 .details .span12 #share-1 { background: transparent url("images/sprite-part1.png") -912px -215px no-repeat; height:33px; width:33px; float:left; }
+.login-info .span6 .details .span12 #share-2 { background: transparent url("images/sprite-part1.png") -948px -215px no-repeat; height:33px; width:33px; float:left; }
+.login-info .span6 .details .span12 #share-3 { background: transparent url("images/sprite-part1.png") -913px -283px no-repeat; height:33px; width:33px; float:left; }
+.login-info .span6 .details .span12 #share-4 { background: transparent url("images/sprite-part1.png") -874px -177px no-repeat; height:33px; width:33px; float:left; }
+.login-info .span6 .details .span12 #share-5 { background: transparent url("images/sprite-part1.png") -981px -214px no-repeat; height:33px; width:33px; float:left; }
+.login-info .span6 .details .span12 #share-6 { background: transparent url("images/sprite-part1.png") -950px -363px no-repeat; height:33px; width:33px; float:left; }
+.login-info .span6 .details .span12 #share-7 { background: transparent url("images/sprite-part1.png") -874px -251px no-repeat; height:33px; width:33px; float:left; }
+.login-info .span6 .details .span12 #share-8 { background: transparent url("images/sprite-part1.png") -947px -283px no-repeat; height:33px; width:33px; float:left; }
+.login-info .span6 .details .span12 #share-9 { background: transparent url("images/sprite-part1.png") -981px -283px no-repeat; height:33px; width:33px; float:left; }
+.login-info .span6 .details .span12 #share-10 { background: transparent url("images/sprite-part1.png") -914px -363px no-repeat; height:33px; width:33px; float:left; }
+
+.available-images-div { 
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dfdfd8), to(#e9e9e4));
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #e9e9e4, #dfdfd8);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #e9e9e4, #dfdfd8);
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #e9e9e4, #dfdfd8);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #e9e9e4, #dfdfd8);
+  width:100%;
+  float: left;
+}
+
+.available-images-div .span10 { padding-top:4%; padding-bottom: 2%; }
+.available-images-div .span10 label { font-family:'interval_condensedultralight'; font-size:40px; color: #000; text-decoration: capitalize; }
+.available-images-div .span10 img { margin-left: 2%;}
+
+.img-block1 { background-color: #e9e9e4; float: left; padding-bottom: 20px; }
+.img-block1 ul.thumbnails { padding-left: 0;}
+.img-block1 ul.thumbnails li.span4 { margin-left: 22px;width:231px; height:277px; float:left;}
+.img-block1 ul.thumbnails li.span4 div.upper-row { display: table; background-color: #fff; width: 229px; height:228px; border-left: 1px solid #a7a7a7; border-top: 1px solid #a7a7a7; border-right: 1px solid #a7a7a7; }
+.img-block1 ul.thumbnails li.span4:not(.first-row) { margin-top: 21px; } 
+
+
+.img-block1 ul.thumbnails li.span4 img { clear:both; max-width:100%; }
+.img-block1 ul.thumbnails li.span4 p { background-color: #e9e9e4; width: 100%; margin: 0 auto ; height: 53px; border-left: 1px solid #a7a7a7; border-bottom: 1px solid #a7a7a7; border-right: 1px solid #a7a7a7; }
+
+.img-block1 ul.thumbnails li.span4 a.thumbnail { display: table-cell; vertical-align: middle; }
+.img-block1 a.see-more { float: right; margin-right: 5%; margin-top: 30px;}
+.img-block1 a.see-more span{ background: transparent url("images/sprite-part2.png") -800px -110px no-repeat; height:50px; width:165px; float:right;}
+
+/*.portfolio-images-div {  width:100%; float: left; background-color: #dfdfdb; }*/
+.portfolio-images-div .span10 { padding-top:4%; padding-bottom: 2%; }
+.portfolio-images-div .span10 label { font-family:'interval_condensedultralight'; font-size:40px; color: #000; text-decoration: capitalize; }
+
+.img-block2 { /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dfdfd8), to(#e9e9e4))!important;
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #e9e9e4, #dfdfd8)!important;
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #e9e9e4, #dfdfd8)!important;
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #e9e9e4, #dfdfd8)!important;
+ }
+
+.footer { float:left; background-color: #dfdfdb; }
+.footer .span10 { padding: 10px 0px;}
+.footer .info label { font-family: "interval_condensedmedium"; font-size: 15px;}
+.footer .info ul { list-style-type: none; padding:0;}
+.footer .info ul li a{ float:left; color:#000; margin: 3px 5%; font-family: 'interval_condensedregular'; font-size: 12px; text-decoration: none }
+.footer .info ul li a:first-child { margin-left:0!important;}
+.footer .share span.share-1 { background: transparent url("images/sprite-part1.png") -270px -10px; height:50px; width:50px; float:right;}
+.footer .share span.share-2 { background: transparent url("images/sprite-part1.png") -215px -10px; height:50px; width:50px; float:right;}
+.footer .share span.share-3 { background: transparent url("images/sprite-part1.png") -160px -10px; height:50px; width:50px; float:right;}
+.footer .share span.share-4 { background: transparent url("images/sprite-part1.png") -105px -10px; height:50px; width:50px; float:right;}
